@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h2 id = "regBook">책 등록</h2>
+<form id="form1" name="form1" enctype="multipart/form-data" method="post">
+    <table border="1">
+      <tr>
+        <td class = "title">
+            <label for="bookCategory">분류 선택</label></td>
+        <td>
+           <input list="bookCategorys" size = "5" name="bookCategory" id="bookCategory">
+           <datalist id="bookCategorys">
+             <option value="Edge">
+             <option value="Firefox">
+             <option value="Chrome">
+             <option value="Opera">
+             <option value="Safari">
+             </datalist>
+        </td>
+      </tr>
+        <tr>
+            <td class = "title">제목</td>
+            <td><input type="text" name="bookName" id="bookName"></td>
+        </tr>
+        <tr>
+            <td class = "title">가격</td>
+            <td><input type="text" size = "10" name="bookPrice" id="bookPrice">원</td>
+        </tr>
+        <tr>
+            <td class = "title">수량</td>
+            <td><input type="text" size = "10" name="bookStock" id="bookStock">권</td>
+        </tr>
+        <tr>
+            <td class = "title">저자</td>
+            <td><input type="text" name="bookAuthor" id="bookAuthor"></td>
+        </tr>
+        <tr>
+            <td class = "title">출판사</td>
+            <td><input type="text" name="bookPublisher" id="bookPublisher"></td>
+        </tr>
+        <tr>
+            <td class = "title">출판일</td>
+            <td><input type="date" id="bookPublishDate" name="bookPublishDate"></td>
+        </tr>
+        <tr>
+            <td class = "title">이미지</td>
+            <td><input type="file" name="bookPhoto" id="bookPhoto"></td>
+        </tr>
+        <tr>
+            <td class = "title">내용</td>
+            <td><textarea rows="10" cols="50" name="bookDesc" id="bookDesc" style="overflow-y:scroll"></textarea></td>
+        </tr>
+        <tr>
+            <td class = "title">할인율</td>
+            <td><input type = "text" name = "bookDiscountRate" size = "3" id="bookDiscount"></textarea>%</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" class = "title">
+                <input type="button" value="책등록" id="addBtn">
+                <input type="reset" value="다시작성" id="resetBtn">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+
